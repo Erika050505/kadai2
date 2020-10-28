@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
- get '/' => 'homes#top'
+  resources :products
+ root :to => 'homes#top'
  resources :books
 end
